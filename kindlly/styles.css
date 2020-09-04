@@ -38,13 +38,13 @@ h3 {
 }
 
 h4 {
-    font-weight: 800;
+	font-weight: 800;
 }
 
 header {
 	border-bottom: 1px solid #f77f00;
 	color: #003049;
-	height: 5rem;
+	height: 6rem;
 	position: fixed;
 	width: 100%;
 	background: #f2eccf;
@@ -55,6 +55,7 @@ header {
 
 header h1 {
 	color: #003049;
+	font-size: 3rem;
 }
 
 header a {
@@ -65,6 +66,69 @@ header a {
 header p {
 	font-size: 1rem;
 	font-weight: 100;
+}
+
+header .container {
+	display: flex;
+}
+
+header nav {
+	margin-left: auto;
+	display: flex;
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+}
+
+header nav ul li {
+	margin: 1rem 1rem;
+	font-size: 1.2rem;
+	font-family: "Playfair Display";
+}
+
+header nav ul li a {
+	color: #003049;
+}
+
+#profile-link {
+	display: flex;
+	position: relative;
+	height: 3rem;
+	margin: 0 0;
+	right:-2rem;
+}
+
+#profile-link img {
+	display: flex;
+	height: 4rem;
+	width: 4rem;
+	border-radius: 2rem;
+	margin:0;
+	padding:0;
+	border:1px solid #f77f00;
+	
+	/* z-index: 10; */
+}
+
+#profile-link .points {
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	display: block;
+	margin: 0;
+	font-size: 1.5rem;
+	background: #d62828;
+	color: white;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 2rem;
+	text-align: center;
+	line-height: 4rem;
+
+	position: relative;
+	left: -1rem;
+	/* bottom: -2rem; */
 }
 
 main {
@@ -183,12 +247,12 @@ main {
 }
 
 .my-kindllys {
-    width: 33.33333%;
+	width: 33.33333%;
 }
 
 .my-kindllys .fixed-container {
-    position: sticky;
-    top: 5rem;
+	position: sticky;
+	top: 6rem;
 }
 
 .my-kindllys h2 {
@@ -215,13 +279,13 @@ main {
 }
 
 footer {
-    margin-top:3rem;
+	margin-top: 3rem;
 	background: #003049;
 	color: white;
 	min-height: 10rem;
 	text-align: center;
-    display: flex;
-    z-index: 100;
+	display: flex;
+	z-index: 100;
 }
 
 footer .container {
