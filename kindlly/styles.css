@@ -1,0 +1,229 @@
+/* 
+
+Color Scheme from
+https://coolors.co/003049-d62828-f77f00-fcbf49-f2eccf
+
+Prussian Blue: #003049
+Maximum Red: #d62828
+Orange: #f77f00
+Max Yellow Red: #fcbf49
+Cornsilk: #fcbf49
+Lightened Cornsilk: #f2eccff
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	background: #f2eccf;
+	color: #003049;
+	font-size: 18px;
+}
+
+.container,
+main {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Playfair Display";
+}
+
+h4 {
+    font-weight: 800;
+}
+
+header {
+	border-bottom: 1px solid #f77f00;
+	color: #003049;
+	height: 5rem;
+	position: fixed;
+	width: 100%;
+	background: #f2eccf;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+header h1 {
+	color: #003049;
+}
+
+header a {
+	text-decoration: none;
+	display: block;
+}
+
+header p {
+	font-size: 1rem;
+	font-weight: 100;
+}
+
+main {
+	display: flex;
+	min-height: 75vh;
+	margin-top: 6rem;
+}
+
+.browse-kindllys {
+	width: 66.666666%;
+}
+
+.browse-kindllys h3 {
+	margin: 2rem 0 0 0rem;
+	font-family: Roboto;
+	font-weight: 400;
+	font: size 1.8rem;
+	text-transform: capitalize;
+}
+
+.kindlly-list {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-left: -1rem;
+	/* overflow: auto; */
+}
+
+.kindlly {
+	border-radius: 1rem;
+	background: rgba(247, 127, 0, 0.1);
+	margin: 1rem 1rem 3rem 1rem;
+	display: flex;
+	flex-direction: column;
+
+	/* box-shadow: 1px 0px 15px #002f490d; */
+	/* box-shadow: 0 5px 45px 5px rgba(0, 0, 0, 0.13); */
+
+	background: linear-gradient(145deg, #dad4ba, #fffddd);
+	box-shadow: 30px 30px 60px #dad4ba, -30px -30px 60px #ffffe4;
+	transition: all 0.25s ease-in-out;
+}
+
+.kindlly:hover {
+	box-shadow: inset 30px 30px 60px #dad4ba, -30px -30px 60px #ffffe4;
+}
+
+.kindlly .header {
+	position: relative;
+}
+
+.kindlly .header h4 {
+	font-size: 1.25rem;
+}
+
+.kindlly .header .info {
+	margin: 1rem 1rem;
+}
+.kindlly .header .info > div {
+	margin-top: 0.5rem;
+}
+
+.browse-kindllys .kindlly {
+	max-width: 40%;
+}
+
+.kindlly .header .points {
+	background: #d62828;
+	color: white;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	text-align: center;
+	position: absolute;
+	top: -1rem;
+	right: -1rem;
+}
+
+.kindlly .header .faded {
+	opacity: 0.3;
+}
+
+.kindlly .creator-info {
+	display: flex;
+	margin-top: auto;
+}
+
+.kindlly .creator-info p:first-child {
+	font-variant-caps: all-petite-caps;
+	font-size: 0.8em;
+	opacity: 0.5;
+}
+
+.kindlly .creator-info img {
+	max-height: 50px;
+	padding: 0rem 0.5rem 0rem 1rem;
+}
+
+.kindlly .buttons {
+	background: #fcbf49;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0.5rem 0 0 0;
+	padding: 0rem 1rem;
+	border-radius: 0 0 1rem 1rem;
+}
+
+.kindlly .button {
+	font-size: 1.8rem;
+	padding: 5px;
+	text-decoration: none;
+	color: white;
+	border-radius: 2rem;
+}
+
+.my-kindllys {
+    width: 33.33333%;
+}
+
+.my-kindllys .fixed-container {
+    position: sticky;
+    top: 5rem;
+}
+
+.my-kindllys h2 {
+	margin: 0 0 0 1rem;
+}
+
+.my-kindllys .kindlly .header h4 {
+	font-size: 1.5rem;
+}
+
+.my-kindllys .header .info > div {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.my-kindllys .buttons {
+	background: #f77f00;
+}
+
+.complete-button {
+	width: 100%;
+	text-align: center;
+}
+
+footer {
+    margin-top:3rem;
+	background: #003049;
+	color: white;
+	min-height: 10rem;
+	text-align: center;
+    display: flex;
+    z-index: 100;
+}
+
+footer .container {
+	margin: auto;
+}

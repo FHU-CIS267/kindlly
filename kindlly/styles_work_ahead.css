@@ -1,0 +1,162 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Roboto;
+    background: #f2eccf;
+    color: #003049;
+}
+
+.container, main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4 {
+    font-family: "Playfair Display";
+}
+
+
+header {
+    border-bottom:1px solid #f77f00;
+    background: #f2eccf;
+    line-height: 5rem;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    margin-top:6rem;
+}
+
+.left {
+    width: 66%;
+}
+
+.browse-kindllys {
+}
+
+.kindlly-group{
+    max-width: 900px;
+    margin: auto;
+    flex-direction: column;
+}
+
+.kindlly-list{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kindlly {
+    background: rgba(247,127,0, 0.1);    
+    margin: 1rem;   
+    border-radius: 1rem;
+}
+
+.kindlly .header {
+    display: flex;
+    padding: 1rem;
+}
+
+
+.kindlly .header h4 {
+    font-size:1.2rem;
+}
+
+.kindlly .header p .gray {
+    opacity: 0.5;
+}
+
+.kindlly .points {
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    background: #d62828;
+    font-size: 1.0rem;;
+    height: 2.5rem;
+    min-width:  2.5rem;
+    line-height: 2.5rem;
+    border-radius: 2.5rem;
+    flex-grow: 1;
+    position: relative;
+    top:-1.5rem;
+    right:-1.5rem;
+}
+
+.kindlly .buttons {
+    background: #fcbf49;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0 0 0;
+    padding-top: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 1rem;
+    height: 2.5rem;
+    line-height: 2.0rem;
+    font-size: 2.0rem;
+    color: #003049;
+    margin-left: 0.75rem;
+}
+
+.kindlly .add-button {   
+}
+
+.kindlly .like-button {   
+}
+
+.kindlly .remix-button {
+
+}
+
+
+.kindlly .info {
+    display: flex;
+}
+
+.kindlly .info {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info>p{
+    font-variant-caps: all-small-caps;
+    opacity: 0.5;
+}
+
+.kindlly .creator-row {
+    display: flex;
+}
+
+.kindlly .info .creator-row img {
+    max-height: 50px;
+}
+
+
+.my-kindllys {
+    width: 33%;
+}
+
+
+footer {
+    background: #003049;
+    color: #eee;
+    height: 10rem;
+}
