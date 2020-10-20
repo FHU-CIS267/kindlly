@@ -1,0 +1,228 @@
+{
+    "discoverKindllys": [
+        {
+            "sectionName": "Trending",
+            "kindllys": [
+                {
+                    "id": 1,
+                    "description": "Buy your CS professor a coffee!",
+                    "points": 25,
+                    "cost": 1,
+                    "creator": {
+                        "username": "CoTo",
+                        "firstName": "Cody",
+                        "lastName": "Todd",
+                        "avatar": "cody.jpg"
+                    },
+                    "isLiked": false
+                },
+                {
+                    "id": 2,
+                    "description": "Send a text to your dad asking him about his day.",
+                    "points": 15,
+                    "cost": 0,
+                    "creator": {
+                        "username": "TheRealDaYarnell",
+                        "firstName": "Dallas",
+                        "lastName": "Yarnell",
+                        "avatar": "dallas.jpg"
+                    },
+                    "isLiked": true
+                },
+                {
+                    "id": 3,
+                    "description": "Bring your roomate an iced tea with an encouraging note on the cup!",
+                    "points": 15,
+                    "cost": 1,
+                    "creator": {
+                        "username": "DaYa",
+                        "firstName": "Cody",
+                        "lastName": "Todd",
+                        "avatar": "cody.jpg"
+                    },
+                    "isLiked": false
+                },
+                {
+                    "id": 4,
+                    "description": "Send a text to your mom thanking her.",
+                    "points": 10,
+                    "cost": 0,
+                    "creator": {
+                        "username": "TheRealDaYarnell",
+                        "firstName": "Dallas",
+                        "lastName": "Yarnell",
+                        "avatar": "dallas.jpg"
+                    },
+                    "isLiked": true
+                }
+            ]
+        },
+        {
+            "sectionName": "For Young People ",
+            "kindllys": [
+                {
+                    "id": 5,
+                    "description": "Buy your CS professor a coffee!",
+                    "points": 25,
+                    "cost": 1,
+                    "creator": {
+                        "username": "CoTo",
+                        "firstName": "Cody",
+                        "lastName": "Todd",
+                        "avatar": "cody.jpg"
+                    },
+                    "isLiked": false
+                },
+                {
+                    "id": 6,
+                    "description": "Send a text to your dad asking him about his day.",
+                    "points": 15,
+                    "cost": 0,
+                    "creator": {
+                        "username": "TheRealDaYarnell",
+                        "firstName": "Dallas",
+                        "lastName": "Yarnell",
+                        "avatar": "dallas.jpg"
+                    },
+                    "isLiked": true
+                },
+                {
+                    "id": 7,
+                    "description": "Bring your roomate an iced tea with an encouraging note on the cup!",
+                    "points": 15,
+                    "cost": 1,
+                    "creator": {
+                        "username": "DaYa",
+                        "firstName": "Cody",
+                        "lastName": "Todd",
+                        "avatar": "cody.jpg"
+                    },
+                    "isLiked": false
+                },
+                {
+                    "id": 8,
+                    "description": "Send a text to your mom thanking her.",
+                    "points": 10,
+                    "cost": 0,
+                    "creator": {
+                        "username": "TheRealDaYarnell",
+                        "firstName": "Dallas",
+                        "lastName": "Yarnell",
+                        "avatar": "dallas.jpg"
+                    },
+                    "isLiked": true
+                }
+            ]
+        },
+        {
+            "sectionName": "On the Cheap ",
+            "kindllys": [
+                {
+                    "id": 5,
+                    "description": "Buy your CS professor a coffee!",
+                    "points": 25,
+                    "cost": 1,
+                    "creator": {
+                        "username": "CoTo",
+                        "firstName": "Cody",
+                        "lastName": "Todd",
+                        "avatar": "cody.jpg"
+                    },
+                    "isLiked": false
+                },
+                {
+                    "id": 6,
+                    "description": "Send a text to your dad asking him about his day.",
+                    "points": 15,
+                    "cost": 0,
+                    "creator": {
+                        "username": "TheRealDaYarnell",
+                        "firstName": "Dallas",
+                        "lastName": "Yarnell",
+                        "avatar": "dallas.jpg"
+                    },
+                    "isLiked": true
+                },
+                {
+                    "id": 7,
+                    "description": "Bring your roomate an iced tea with an encouraging note on the cup!",
+                    "points": 15,
+                    "cost": 1,
+                    "creator": {
+                        "username": "DaYa",
+                        "firstName": "Cody",
+                        "lastName": "Todd",
+                        "avatar": "cody.jpg"
+                    },
+                    "isLiked": false
+                },
+                {
+                    "id": 8,
+                    "description": "Send a text to your mom thanking her.",
+                    "points": 10,
+                    "cost": 0,
+                    "creator": {
+                        "username": "TheRealDaYarnell",
+                        "firstName": "Dallas",
+                        "lastName": "Yarnell",
+                        "avatar": "dallas.jpg"
+                    },
+                    "isLiked": true
+                }
+            ]
+        }
+    ],
+    "myKindllys": [
+        {
+            "id": 5,
+            "description": "Buy your CS professor a coffee!",
+            "points": 25,
+            "cost": 1,
+            "creator": {
+                "username": "CoTo",
+                "firstName": "Cody",
+                "lastName": "Todd",
+                "avatar": "cody.jpg"
+            },
+            "isLiked": true,
+            "dateAdded": "2020-10-20T01:29:55.422Z",
+            "isCompleted": false
+        },
+        {
+            "id": 8,
+            "description": "Send a note to your sibling expressing appreciation.",
+            "points": 15,
+            "cost": 0,
+            "creator": {
+                "username": "TheRealDaYarnell",
+                "firstName": "Dallas",
+                "lastName": "Yarnell",
+                "avatar": "dallas.jpg"
+            },
+            "isLiked": true,
+            "dateAdded": "2020-10-20T01:29:55.422Z",
+            "isCompleted": false
+        },
+        {
+            "id": 8,
+            "description": "Send a text to your mom thanking her.",
+            "points": 10,
+            "cost": 0,
+            "creator": {
+                "username": "TheRealDaYarnell",
+                "firstName": "Dallas",
+                "lastName": "Yarnell",
+                "avatar": "dallas.jpg"
+            },
+            "isLiked": true,
+            "dateAdded": "2020-10-20T01:29:55.422Z",
+            "isCompleted": true
+        }
+    ],
+    "currentUser": {
+        "username": "TheRealDaYarnell",
+        "firstName": "Dallas",
+        "lastName": "Yarnell",
+        "avatar": "dallas.jpg"
+    }
+}
