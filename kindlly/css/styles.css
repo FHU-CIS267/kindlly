@@ -97,7 +97,7 @@ header nav ul li a {
 	position: relative;
 	height: 3rem;
 	margin: 0 0;
-	right:-2rem;
+	right: -2rem;
 }
 
 #profile-link img {
@@ -105,29 +105,29 @@ header nav ul li a {
 	height: 4rem;
 	width: 4rem;
 	border-radius: 2rem;
-	margin:0;
-	padding:0;
-	border:1px solid #f77f00;
-	
+	margin: 0;
+	padding: 0;
+	border: 1px solid #f77f00;
+
 	/* z-index: 10; */
 }
 
 #profile-link .points {
 	display: block;
 	margin: 0;
-	
+
 	font-family: Roboto, sans-serif;
 	font-size: 1.5rem;
 	font-weight: 800;
 	line-height: 1.1rem;
-	padding-top: 1.2rem; 
+	padding-top: 1.2rem;
 	background: #d62828;
 	color: #eee;
 	width: 4rem;
 	height: 4rem;
 	border-radius: 2rem;
 	text-align: center;
-	
+
 	position: relative;
 	left: -1rem;
 	/* bottom: -2rem; */
@@ -203,7 +203,7 @@ main {
 }
 
 .kindlly .header .points {
-	background: #d62828;	
+	background: #d62828;
 	color: white;
 	padding-top: 0.7rem;
 	font-size: 1.1rem;
@@ -248,7 +248,7 @@ main {
 	display: flex;
 	justify-content: flex-end;
 	margin: 0.5rem 0 0 0;
-	padding: 0rem 1rem;
+	padding: 0.25rem 1rem;
 	border-radius: 0 0 1rem 1rem;
 }
 
@@ -260,6 +260,24 @@ main {
 	border-radius: 2rem;
 }
 
+.kindlly .more-button {
+	margin-right: auto;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	text-decoration: none;
+	color: #eee;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	display: block;
+	margin: auto auto auto 0;
+}
+
+.kindlly .more-button:hover {
+	/* opacity: 0.5; */
+	background: #f2eccf44;
+}
+
 .my-kindllys {
 	width: 33.33333%;
 }
@@ -269,17 +287,17 @@ main {
 	top: 6rem;
 }
 
-.my-kindllys h2, .my-kindllys h3 {
+.my-kindllys h2,
+.my-kindllys h3 {
 	margin: 0 0 0 1rem;
 }
 
 .my-kindllys h3 {
-	margin-top: 2rem;;
+	margin-top: 2rem;
 	font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font: size 1.8rem;
+	font-weight: 400;
+	font: size 1.8rem;
 	text-transform: capitalize;
-	
 }
 
 .my-kindllys .kindlly .header h4 {
@@ -299,7 +317,7 @@ main {
 .my-kindllys .complete-button {
 	width: 100%;
 	text-align: left;
-	font-size: 1.0rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	font-weight: 800;
 	margin: 1rem 0rem 1rem 0rem;
@@ -309,22 +327,22 @@ main {
 	width: 20%;
 	text-align: right;
 	font-size: 0.8rem;
-	line-height: 1.0rem;
+	line-height: 1rem;
 	text-transform: uppercase;
 	margin: 1.5rem 0 1.2rem 0rem;
-	opacity: 0.0;
+	opacity: 0;
 }
 
 .my-kindllys .kindlly:hover .delete-button {
 	opacity: 0.9;
 }
 
-.my-kindllys .kindlly.completed h4{
+.my-kindllys .kindlly.completed h4 {
 	text-decoration: line-through;
 }
 
 .my-kindllys .kindlly.completed .points {
-	display:none;
+	display: none;
 }
 
 footer {

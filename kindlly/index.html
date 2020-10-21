@@ -3,648 +3,676 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Kindlly | create kindness</title>
+		<title>Kindlly | create kindness, get points</title>
 
 		<link
-			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;400;700&family=Roboto:wght@100;400;700&&display=swap"
 			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;400;700&family=Roboto:wght@100;400;700&&display=swap"
 		/>
 		<link rel="stylesheet" href="css/elusive-icons.min.css" />
 
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
-		<header>
-			<div class="container">
-				<div class="left">
-					<a href="#"><h1>Kindlly</h1></a>
-					<p>create kindness, get points</p>
+		<div id="app">
+			<header>
+				<div class="container">
+					<div class="left">
+						<a href="#"><h1>Kindlly</h1></a>
+						<p>create kindness, get points</p>
+					</div>
+
+					<nav>
+						<ul>
+							<li class="nav-item"><a href="#">Contribute</a></li>
+							<li class="nav-item"><a href="#">Contact</a></li>
+							<li class="nav-item">
+								<a href="#" id="profile-link">
+									<img :src="user.avatar" alt="" />
+									<p class="points">
+										<span class="value">300</span><br />
+										<span class="label">KP</span>
+									</p>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<main>
+				<div class="browse-kindllys">
+					<h2>Browse Kindllys</h2>
+					<!-- <p class="lede">create the kindness you wish existed</p> -->
+					<div class="kindlly-groups">
+						<div class="kindlly-group">
+							<h3>Trending</h3>
+							<div class="kindlly-list">
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>Buy your CS professor a coffee!</h4>
+											<div>
+												<p class="cost">
+													<span>$</span><span class="faded">$$</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+25</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/1.png" alt="" class="creator-img" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">RyanFox</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<!-- <a href="" class="share-button button">⇧</a> -->
+										<!-- <a href="" class="remix-button button">⇆</a> -->
+										
+										<a href="" class="more-button button">···</a>
+										<a href="" class="like-button button"
+											><i class="el el-heart"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>
+												Bring your roomate an iced tea with an encouraging note
+												on the cup!
+											</h4>
+											<div>
+												<p class="cost">
+													<span>$</span><span class="faded">$$</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+15</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/dallas.jpg" alt="" class="creator" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">TheRealDallasYarnell</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<!-- <a href="" class="share-button button">⇧</a> -->
+
+										<!-- <a href="" class="remix-button button">⇆</a> -->
+
+										<a href="" class="more-button button">···</a>
+										<a href="" class="like-button button"
+											><i class="el el-heart-empty"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>Send a text to your mom thanking her.</h4>
+											<div>
+												<p class="cost">
+													<span></span><span class="faded">FREE</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+10</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/cody.jpg" alt="" class="creator" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">CoTo</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<!-- <a href="" class="share-button button">⇧</a> -->
+
+										<a href="" class="more-button button">···</a>
+
+										<a href="" class="like-button button"
+											><i class="el el-heart-empty"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>Send a text to your dad asking him about his day</h4>
+											<div>
+												<p class="cost">
+													<span></span><span class="faded">FREE</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+15</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/5.png" alt="" class="creator" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">JaneHare</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<a href="" class="more-button button">···</a>
+
+										<a href="" class="like-button button"
+											><i class="el el-heart-empty"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+							</div>
+						</div>
+
+						<div class="kindlly-group">
+							<h3>For Creators</h3>
+							<div class="kindlly-list">
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>Buy your CS professor a coffee!</h4>
+											<div>
+												<p class="cost">
+													<span>$</span><span class="faded">$$</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+15</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/1.png" alt="" class="creator-img" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">RyanFox</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<a href="" class="more-button button">···</a>
+
+										<a href="" class="like-button button"
+											><i class="el el-heart-empty"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>
+												Bring your roomate an iced tea with an encouraging note
+												on the cup!
+											</h4>
+											<div>
+												<p class="cost">
+													<span>$</span><span class="faded">$$</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+15</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/2.png" alt="" class="creator" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">JWNick</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<a href="" class="more-button button">···</a>
+
+										<a href="" class="like-button button"
+											><i class="el el-heart-empty"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>Send a text to your mom thanking her.</h4>
+											<div>
+												<p class="cost">
+													<span></span><span class="faded">FREE</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+15</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/4.png" alt="" class="creator" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">JaneHare</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<a href="" class="more-button button">···</a>
+
+										<a href="" class="like-button button"
+											><i class="el el-heart-empty"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>Send a text to your dad asking him about his day</h4>
+											<div>
+												<p class="cost">
+													<span></span><span class="faded">FREE</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+15</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/5.png" alt="" class="creator" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">JaneHare</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<a href="" class="more-button button">···</a>
+
+										<a href="" class="like-button button"
+											><i class="el el-heart-empty"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+							</div>
+						</div>
+
+						<div class="kindlly-group">
+							<h3>Popular for Young People</h3>
+							<div class="kindlly-list">
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>Buy your CS professor a coffee!</h4>
+											<div>
+												<p class="cost">
+													<span>$</span><span class="faded">$$</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+15</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/1.png" alt="" class="creator-img" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">RyanFox</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<a href="" class="more-button button">···</a>
+
+										<a href="" class="like-button button"
+											><i class="el el-heart-empty"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>
+												Bring your roomate an iced tea with an encouraging note
+												on the cup!
+											</h4>
+											<div>
+												<p class="cost">
+													<span>$</span><span class="faded">$$</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+15</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/2.png" alt="" class="creator" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">JWNick</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<a href="" class="more-button button">···</a>
+
+										<a href="" class="like-button button"
+											><i class="el el-heart-empty"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>Send a text to your mom thanking her.</h4>
+											<div>
+												<p class="cost">
+													<span></span><span class="faded">FREE</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+15</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/4.png" alt="" class="creator" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">JaneHare</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<a href="" class="more-button button">···</a>
+
+										<a href="" class="like-button button"
+											><i class="el el-heart-empty"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+
+								<div class="kindlly">
+									<div class="header">
+										<div class="info">
+											<h4>Send a text to your dad asking him about his day</h4>
+											<div>
+												<p class="cost">
+													<span></span><span class="faded">FREE</span>
+												</p>
+											</div>
+										</div>
+
+										<p class="points">
+											<span class="value">+15</span><br />
+											<span class="label">KP</span>
+										</p>
+									</div>
+
+									<div class="creator-info">
+										<img src="img/avatars/5.png" alt="" class="creator" />
+										<div class="creator-row">
+											<p>Creator</p>
+											<p class="creator-name">JaneHare</p>
+											<!-- <p class="adds">24 <span>＋</span></p>
+                                    <p class="likes">106 <span>♡</span></p> -->
+										</div>
+									</div>
+
+									<section class="buttons">
+										<a href="" class="more-button button">···</a>
+
+										<a href="" class="like-button button"
+											><i class="el el-heart-empty"></i
+										></a>
+										<a href="#" class="add-button button"
+											><i class="el el-plus-sign"></i
+										></a>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
-				<nav>
-					<ul>
-						<li class="nav-item"><a href="#">Contribute</a></li>
-						<li class="nav-item"><a href="#">Contact</a></li>
-						<li class="nav-item">
-							<a href="#" id="profile-link">
-								<img src="img/avatars/male-square.png" alt="" />
+				<div class="my-kindllys">
+					<div class="fixed-container">
+						<h2>My Kindllys</h2>
+						<!-- <h3>Todo</h3> -->
+						<div class="kindlly">
+							<div class="header">
+								<div class="info">
+									<h4>Buy your CS professor a coffee!</h4>
+									<div class="">
+										<p class="cost">
+											<span>$</span><span class="faded">$$</span>
+										</p>
+										<p class="date">2d ago</p>
+									</div>
+								</div>
+
 								<p class="points">
-									<span class="value">300</span><br />
+									<span class="value">+15</span><br />
 									<span class="label">KP</span>
 								</p>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
-		<main>
-			<div class="browse-kindllys">
-				<h2>Browse Kindllys</h2>
-				<!-- <p class="lede">create the kindness you wish existed</p> -->
-				<div class="kindlly-groups">
-					<div class="kindlly-group">
-						<h3>Trending</h3>
-						<div class="kindlly-list">
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>Buy your CS professor a coffee!</h4>
-										<div>
-											<p class="cost">
-												<span>$</span><span class="faded">$$</span>
-											</p>
-										</div>
-									</div>
-
-									<p class="points">
-										<span class="value">+25</span><br />
-										<span class="label">KP</span>
-									</p>
-								</div>
-
-								<div class="creator-info">
-									<img src="img/avatars/1.png" alt="" class="creator-img" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">RyanFox</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
-									</div>
-								</div>
-
-								<section class="buttons">
-									<!-- <a href="" class="share-button button">⇧</a> -->
-									<!-- <a href="" class="remix-button button">⇆</a> -->
-
-									<a href="" class="like-button button"
-										><i class="el el-heart"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
 							</div>
 
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>
-											Bring your roomate an iced tea with an encouraging note on
-											the cup!
-										</h4>
-										<div>
-											<p class="cost">
-												<span>$</span><span class="faded">$$</span>
-											</p>
-										</div>
-									</div>
-
-									<p class="points">
-										<span class="value">+15</span><br />
-										<span class="label">KP</span>
-									</p>
-								</div>
-
-								<div class="creator-info">
-									<img src="img/avatars/dallas.jpg" alt="" class="creator" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">TheRealDallasYarnell</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
-									</div>
-								</div>
-
-								<section class="buttons">
-									<!-- <a href="" class="share-button button">⇧</a> -->
-
-									<!-- <a href="" class="remix-button button">⇆</a> -->
-
-									<a href="" class="like-button button"
-										><i class="el el-heart-empty"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
-							</div>
-
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>Send a text to your mom thanking her.</h4>
-										<div>
-											<p class="cost">
-												<span></span><span class="faded">FREE</span>
-											</p>
-										</div>
-									</div>
-
-									<p class="points">
-										<span class="value">+10</span><br />
-										<span class="label">KP</span>
-									</p>
-								</div>
-
-								<div class="creator-info">
-									<img src="img/avatars/cody.jpg" alt="" class="creator" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">CoTo</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
-									</div>
-								</div>
-
-								<section class="buttons">
-									<!-- <a href="" class="share-button button">⇧</a> -->
-
-									<a href="" class="like-button button"
-										><i class="el el-heart-empty"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
-							</div>
-
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>Send a text to your dad asking him about his day</h4>
-										<div>
-											<p class="cost">
-												<span></span><span class="faded">FREE</span>
-											</p>
-										</div>
-									</div>
-
-									<p class="points">
-										<span class="value">+15</span><br />
-										<span class="label">KP</span>
-									</p>
-								</div>
-
-								<div class="creator-info">
-									<img src="img/avatars/5.png" alt="" class="creator" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">JaneHare</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
-									</div>
-								</div>
-
-								<section class="buttons">
-									<a href="" class="like-button button"
-										><i class="el el-heart-empty"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
-							</div>
+							<!-- <div class="info">
+						<p>Creator</p>
+						<div class="creator-row">
+							<img src="img/avatars/1.png" alt="" class="creator" />
+							<p class="creator-name">RyanFox</p>
+							<p class="adds">24 <span>＋</span></p>
+						<p class="likes">106 <span>♡</span></p>
 						</div>
-					</div>
+					</div> -->
 
-					<div class="kindlly-group">
-						<h3>For Creators</h3>
-						<div class="kindlly-list">
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>Buy your CS professor a coffee!</h4>
-										<div>
-											<p class="cost">
-												<span>$</span><span class="faded">$$</span>
-											</p>
-										</div>
-									</div>
+							<section class="buttons">
+								<a href="" class="complete-button button"> ◯ Complete</a>
 
-									<p class="points">
-										<span class="value">+15</span><br />
-										<span class="label">KP</span>
-									</p>
-								</div>
-
-								<div class="creator-info">
-									<img src="img/avatars/1.png" alt="" class="creator-img" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">RyanFox</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
-									</div>
-								</div>
-
-								<section class="buttons">
-									<a href="" class="like-button button"
-										><i class="el el-heart-empty"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
-							</div>
-
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>
-											Bring your roomate an iced tea with an encouraging note on
-											the cup!
-										</h4>
-										<div>
-											<p class="cost">
-												<span>$</span><span class="faded">$$</span>
-											</p>
-										</div>
-									</div>
-
-									<p class="points">
-										<span class="value">+15</span><br />
-										<span class="label">KP</span>
-									</p>
-								</div>
-
-								<div class="creator-info">
-									<img src="img/avatars/2.png" alt="" class="creator" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">JWNick</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
-									</div>
-								</div>
-
-								<section class="buttons">
-									<a href="" class="like-button button"
-										><i class="el el-heart-empty"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
-							</div>
-
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>Send a text to your mom thanking her.</h4>
-										<div>
-											<p class="cost">
-												<span></span><span class="faded">FREE</span>
-											</p>
-										</div>
-									</div>
-
-									<p class="points">
-										<span class="value">+15</span><br />
-										<span class="label">KP</span>
-									</p>
-								</div>
-
-								<div class="creator-info">
-									<img src="img/avatars/4.png" alt="" class="creator" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">JaneHare</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
-									</div>
-								</div>
-
-								<section class="buttons">
-									<a href="" class="like-button button"
-										><i class="el el-heart-empty"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
-							</div>
-
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>Send a text to your dad asking him about his day</h4>
-										<div>
-											<p class="cost">
-												<span></span><span class="faded">FREE</span>
-											</p>
-										</div>
-									</div>
-
-									<p class="points">
-										<span class="value">+15</span><br />
-										<span class="label">KP</span>
-									</p>
-								</div>
-
-								<div class="creator-info">
-									<img src="img/avatars/5.png" alt="" class="creator" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">JaneHare</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
-									</div>
-								</div>
-
-								<section class="buttons">
-									<a href="" class="like-button button"
-										><i class="el el-heart-empty"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
-							</div>
+								<a href="" class="button delete-button">
+									<i class="el el-trash"></i>
+								</a>
+							</section>
 						</div>
-					</div>
 
-					<div class="kindlly-group">
-						<h3>Popular for Young People</h3>
-						<div class="kindlly-list">
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>Buy your CS professor a coffee!</h4>
-										<div>
-											<p class="cost">
-												<span>$</span><span class="faded">$$</span>
-											</p>
-										</div>
-									</div>
-
-									<p class="points">
-										<span class="value">+15</span><br />
-										<span class="label">KP</span>
-									</p>
-								</div>
-
-								<div class="creator-info">
-									<img src="img/avatars/1.png" alt="" class="creator-img" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">RyanFox</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
+						<div class="kindlly">
+							<div class="header">
+								<div class="info">
+									<h4>
+										Call a senior citizen who's been isolated due to COVID.
+									</h4>
+									<div class="">
+										<p class="cost">
+											<span></span><span class="faded">FREE</span>
+										</p>
+										<p class="date">9h ago</p>
 									</div>
 								</div>
 
-								<section class="buttons">
-									<a href="" class="like-button button"
-										><i class="el el-heart-empty"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
+								<p class="points">
+									<span class="value">+15</span><br />
+									<span class="label">KP</span>
+								</p>
 							</div>
 
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>
-											Bring your roomate an iced tea with an encouraging note on
-											the cup!
-										</h4>
-										<div>
-											<p class="cost">
-												<span>$</span><span class="faded">$$</span>
-											</p>
-										</div>
-									</div>
+							<!-- <div class="info">
+						<p>Creator</p>
+						<div class="creator-row">
+							<img src="img/avatars/1.png" alt="" class="creator" />
+							<p class="creator-name">RyanFox</p>
+							<p class="adds">24 <span>＋</span></p>
+						<p class="likes">106 <span>♡</span></p>
+						</div>
+					</div> -->
 
-									<p class="points">
-										<span class="value">+15</span><br />
-										<span class="label">KP</span>
-									</p>
+							<section class="buttons">
+								<a href="" class="complete-button button"> ◯ Complete </a>
+								<a href="" class="button delete-button">
+									<i class="el el-trash"></i>
+								</a>
+							</section>
+						</div>
+
+						<h3>Completed</h3>
+
+						<div class="kindlly completed">
+							<div class="header">
+								<div class="info">
+									<h4>Send a card to someone with COVID.</h4>
+									<div class="">
+										<p class="cost">
+											<span></span><span class="faded">FREE</span>
+										</p>
+										<p class="date">9h ago</p>
+									</div>
 								</div>
 
-								<div class="creator-info">
-									<img src="img/avatars/2.png" alt="" class="creator" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">JWNick</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
-									</div>
-								</div>
-
-								<section class="buttons">
-									<a href="" class="like-button button"
-										><i class="el el-heart-empty"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
+								<p class="points">
+									<span class="value">+15</span><br />
+									<span class="label">KP</span>
+								</p>
 							</div>
 
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>Send a text to your mom thanking her.</h4>
-										<div>
-											<p class="cost">
-												<span></span><span class="faded">FREE</span>
-											</p>
-										</div>
-									</div>
+							<!-- <div class="info">
+						<p>Creator</p>
+						<div class="creator-row">
+							<img src="img/avatars/1.png" alt="" class="creator" />
+							<p class="creator-name">RyanFox</p>
+							<p class="adds">24 <span>＋</span></p>
+						<p class="likes">106 <span>♡</span></p>
+						</div>
+					</div> -->
 
-									<p class="points">
-										<span class="value">+15</span><br />
-										<span class="label">KP</span>
-									</p>
-								</div>
-
-								<div class="creator-info">
-									<img src="img/avatars/4.png" alt="" class="creator" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">JaneHare</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
-									</div>
-								</div>
-
-								<section class="buttons">
-									<a href="" class="like-button button"
-										><i class="el el-heart-empty"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
-							</div>
-
-							<div class="kindlly">
-								<div class="header">
-									<div class="info">
-										<h4>Send a text to your dad asking him about his day</h4>
-										<div>
-											<p class="cost">
-												<span></span><span class="faded">FREE</span>
-											</p>
-										</div>
-									</div>
-
-									<p class="points">
-										<span class="value">+15</span><br />
-										<span class="label">KP</span>
-									</p>
-								</div>
-
-								<div class="creator-info">
-									<img src="img/avatars/5.png" alt="" class="creator" />
-									<div class="creator-row">
-										<p>Creator</p>
-										<p class="creator-name">JaneHare</p>
-										<!-- <p class="adds">24 <span>＋</span></p>
-                                    <p class="likes">106 <span>♡</span></p> -->
-									</div>
-								</div>
-
-								<section class="buttons">
-									<a href="" class="like-button button"
-										><i class="el el-heart-empty"></i
-									></a>
-									<a href="#" class="add-button button"
-										><i class="el el-plus-sign"></i
-									></a>
-								</section>
-							</div>
+							<section class="buttons">
+								<a href="" class="complete-button button">
+									<i class="el el-ok-circle"></i> Complete</a
+								>
+							</section>
 						</div>
 					</div>
 				</div>
-			</div>
+			</main>
 
-			<div class="my-kindllys">
-				<div class="fixed-container">
-					<h2>My Kindllys</h2>
-					<!-- <h3>Todo</h3> -->
-					<div class="kindlly">
-						<div class="header">
-							<div class="info">
-								<h4>Buy your CS professor a coffee!</h4>
-								<div class="">
-									<p class="cost">
-										<span>$</span><span class="faded">$$</span>
-									</p>
-									<p class="date">2d ago</p>
-								</div>
-							</div>
-
-							<p class="points">
-								<span class="value">+15</span><br />
-								<span class="label">KP</span>
-							</p>
-						</div>
-
-						<!-- <div class="info">
-						<p>Creator</p>
-						<div class="creator-row">
-							<img src="img/avatars/1.png" alt="" class="creator" />
-							<p class="creator-name">RyanFox</p>
-							<p class="adds">24 <span>＋</span></p>
-						<p class="likes">106 <span>♡</span></p>
-						</div>
-					</div> -->
-
-						<section class="buttons">
-							<a href="" class="complete-button button"> ◯ Complete</a>
-
-							<a href="" class="button delete-button">
-								<i class="el el-trash"></i>
-							</a>
-						</section>
-					</div>
-
-					<div class="kindlly">
-						<div class="header">
-							<div class="info">
-								<h4>Call a senior citizen who's been isolated due to COVID.</h4>
-								<div class="">
-									<p class="cost">
-										<span></span><span class="faded">FREE</span>
-									</p>
-									<p class="date">9h ago</p>
-								</div>
-							</div>
-
-							<p class="points">
-								<span class="value">+15</span><br />
-								<span class="label">KP</span>
-							</p>
-						</div>
-
-						<!-- <div class="info">
-						<p>Creator</p>
-						<div class="creator-row">
-							<img src="img/avatars/1.png" alt="" class="creator" />
-							<p class="creator-name">RyanFox</p>
-							<p class="adds">24 <span>＋</span></p>
-						<p class="likes">106 <span>♡</span></p>
-						</div>
-					</div> -->
-
-						<section class="buttons">
-							<a href="" class="complete-button button"> ◯ Complete </a>
-							<a href="" class="button delete-button">
-								<i class="el el-trash"></i>
-							</a>
-						</section>
-					</div>
-
-					<h3>Completed</h3>
-
-					<div class="kindlly completed">
-						<div class="header">
-							<div class="info">
-								<h4>Send a card to someone with COVID.</h4>
-								<div class="">
-									<p class="cost">
-										<span></span><span class="faded">FREE</span>
-									</p>
-									<p class="date">9h ago</p>
-								</div>
-							</div>
-
-							<p class="points">
-								<span class="value">+15</span><br />
-								<span class="label">KP</span>
-							</p>
-						</div>
-
-						<!-- <div class="info">
-						<p>Creator</p>
-						<div class="creator-row">
-							<img src="img/avatars/1.png" alt="" class="creator" />
-							<p class="creator-name">RyanFox</p>
-							<p class="adds">24 <span>＋</span></p>
-						<p class="likes">106 <span>♡</span></p>
-						</div>
-					</div> -->
-
-						<section class="buttons">
-							<a href="" class="complete-button button">
-								<i class="el el-ok-circle"></i> Complete</a
-							>
-						</section>
-					</div>
+			<footer>
+				<div class="container">
+					<p>&copy; 2020 CIS 267</p>
+					<p>made with ❤️ in TN</p>
 				</div>
-			</div>
-		</main>
-
-		<footer>
-			<div class="container">
-				<p>&copy; 2020 CIS 267</p>
-				<p>made with ❤️ in TN</p>
-			</div>
-		</footer>
+			</footer>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
