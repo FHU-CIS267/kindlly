@@ -22,7 +22,7 @@
                     "points": 15,
                     "cost": 0,
                     "creator": {
-                        "username": "TheRealDaYarnell",
+                        "username": "DaYa",
                         "firstName": "Dallas",
                         "lastName": "Yarnell",
                         "avatar": "dallas.jpg"
@@ -35,7 +35,7 @@
                     "points": 15,
                     "cost": 1,
                     "creator": {
-                        "username": "DaYa",
+                        "username": "CoTo",
                         "firstName": "Cody",
                         "lastName": "Todd",
                         "avatar": "cody.jpg"
@@ -48,7 +48,7 @@
                     "points": 10,
                     "cost": 0,
                     "creator": {
-                        "username": "TheRealDaYarnell",
+                        "username": "DaYa",
                         "firstName": "Dallas",
                         "lastName": "Yarnell",
                         "avatar": "dallas.jpg"
@@ -136,7 +136,7 @@
                     "points": 15,
                     "cost": 0,
                     "creator": {
-                        "username": "TheRealDaYarnell",
+                        "username": "DaYa",
                         "firstName": "Dallas",
                         "lastName": "Yarnell",
                         "avatar": "dallas.jpg"
@@ -149,7 +149,7 @@
                     "points": 15,
                     "cost": 1,
                     "creator": {
-                        "username": "DaYa",
+                        "username": "CoTo",
                         "firstName": "Cody",
                         "lastName": "Todd",
                         "avatar": "cody.jpg"
@@ -162,7 +162,7 @@
                     "points": 10,
                     "cost": 0,
                     "creator": {
-                        "username": "TheRealDaYarnell",
+                        "username": "DaYa",
                         "firstName": "Dallas",
                         "lastName": "Yarnell",
                         "avatar": "dallas.jpg"
@@ -194,7 +194,7 @@
             "points": 15,
             "cost": 0,
             "creator": {
-                "username": "TheRealDaYarnell",
+                "username": "DaYa",
                 "firstName": "Dallas",
                 "lastName": "Yarnell",
                 "avatar": "dallas.jpg"
@@ -209,7 +209,7 @@
             "points": 10,
             "cost": 0,
             "creator": {
-                "username": "TheRealDaYarnell",
+                "username": "DaYa",
                 "firstName": "Dallas",
                 "lastName": "Yarnell",
                 "avatar": "dallas.jpg"
@@ -220,7 +220,7 @@
         }
     ],
     "currentUser": {
-        "username": "TheRealDaYarnell",
+        "username": "DaYa",
         "firstName": "Dallas",
         "lastName": "Yarnell",
         "avatar": "dallas.jpg"
