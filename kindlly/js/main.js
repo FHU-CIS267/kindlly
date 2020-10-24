@@ -1,15 +1,26 @@
 var app = new Vue({
     el: '#app',
     data: {
-        user: {
-            username: "kenancasey",
-            avatar: "img/avatars/male-square.png"
+        discoverKindllys: {},
+        myKindllys: {},
+        user: {}
+    },
+    // computed:
+    // {
+    //     message: function(){
+    //         return `Hello, ${this.user.username}`;
+    //     }
+    // },
+    methods: {
+        loadData: async function () {
+            let response = await fetch("kindllys.json");
+            let json = await response.json();
+            this.discoverKindllys = json.discoverKindllys;
+            this.myKindllys = json.myKindllys;
+            this.user = json.currentUser;
         }
     },
-    computed:
-    {
-        message: function(){
-            return `Hello, ${this.user.username}`;
-        }
+    created: function() {
+        this.loadData();
     }
 });
