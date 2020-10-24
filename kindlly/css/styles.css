@@ -260,6 +260,10 @@ main {
 	border-radius: 2rem;
 }
 
+.button:hover {
+	cursor: pointer;
+}
+
 .kindlly .more-button {
 	margin-right: auto;
 	font-size: 1.8rem;

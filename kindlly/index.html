@@ -74,8 +74,8 @@
 									</div>
 									<section class="buttons">
 										<a href="" class="more-button button">···</a>
-										<a v-if="kindlly.isLiked" href="" class="like-button button"><i class="el el-heart"></i></a>
-										<a v-else href="" class="like-button button"><i class="el el-heart-empty"></i></a>
+										<a @click.prevent="kindlly.isLiked = false" v-if="kindlly.isLiked" class="like-button button"><i class="el el-heart"></i></a>
+										<a @click.prevent="kindlly.isLiked = true" v-else class="like-button button"><i class="el el-heart-empty"></i></a>
 										<a href="#" class="add-button button"><i class="el el-plus-sign"></i></a>
 									</section>
 								</div>

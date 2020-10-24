@@ -5,12 +5,6 @@ var app = new Vue({
         myKindllys: {},
         user: {}
     },
-    // computed:
-    // {
-    //     message: function(){
-    //         return `Hello, ${this.user.username}`;
-    //     }
-    // },
     methods: {
         loadData: async function () {
             let response = await fetch("kindllys.json");
