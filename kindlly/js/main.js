@@ -12,9 +12,15 @@ var app = new Vue({
             this.discoverKindllys = json.discoverKindllys;
             this.myKindllys = json.myKindllys;
             this.user = json.currentUser;
+        },
+        addKindlly: function (kindlly, kindllys) {
+            kindllys.splice(kindllys.indexOf(kindlly), 1);
+
+            this.myKindllys.splice(this.myKindllys.length, 0, kindlly);
+            console.log(this.myKindllys);
         }
     },
-    created: function() {
+    created: function() { 
         this.loadData();
     }
 });

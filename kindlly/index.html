@@ -7,8 +7,7 @@
 
 		<link
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;400;700&family=Roboto:wght@100;400;700&&display=swap"
-		/>
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;400;700&family=Roboto:wght@100;400;700&&display=swap"/>
 		<link rel="stylesheet" href="css/elusive-icons.min.css" />
 
 		<link rel="stylesheet" href="css/styles.css" />
@@ -28,7 +27,8 @@
 							<li class="nav-item"><a href="#">Contact</a></li>
 							<li class="nav-item">
 								<a href="#" id="profile-link">
-									<img v-bind:src="'img/avatars/' + user.avatar" alt="" class="user-img"/>
+									<img src="img/avatars/male-square.png" alt="" />
+									<!-- <img v-bind:src="'img/avatars/' + currentUser.avatar" alt="" class="user-img"/> -->
 									<p class="points">
 										<span class="value">300</span><br />
 										<span class="label">KP</span>
@@ -76,7 +76,7 @@
 										<a href="" class="more-button button">···</a>
 										<a @click.prevent="kindlly.isLiked = false" v-if="kindlly.isLiked" class="like-button button"><i class="el el-heart"></i></a>
 										<a @click.prevent="kindlly.isLiked = true" v-else class="like-button button"><i class="el el-heart-empty"></i></a>
-										<a href="#" class="add-button button"><i class="el el-plus-sign"></i></a>
+										<a @click.prevent="addKindlly(kindlly, section.kindllys)" class="add-button button"><i class="el el-plus-sign"></i></a>
 									</section>
 								</div>
 							</div>
@@ -106,7 +106,7 @@
 								</p>
 							</div>
 							<section class="buttons">
-								<a href="" class="complete-button button"> ◯ Complete</a>
+								<a @click.prevent="myKindlly.isCompleted = true" class="complete-button button"> ◯ Complete</a>
 								<a href="" class="button delete-button">
 									<i class="el el-trash"></i>
 								</a>
@@ -133,9 +133,8 @@
 								</p>
 							</div>
 							<section class="buttons">
-								<a href="" class="complete-button button">
-									<i class="el el-ok-circle"></i> Completed</a
-								>
+								<a @click.prevent="myKindlly.isCompleted = false" class="complete-button button">
+									<i class="el el-ok-circle"></i> Completed</a>
 							</section>
 						</div>
 					</div>
