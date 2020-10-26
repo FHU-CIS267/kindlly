@@ -97,7 +97,7 @@
 										<p class="cost" v-if="myKindlly.cost == 1"><span>$</span><span class="faded">$$</span></p>
 										<p class="cost" v-if="myKindlly.cost == 2"><span>$$</span><span class="faded">$</span></p>
 										<p class="cost" v-if="myKindlly.cost == 3"><span>$$$</span></p>
-										<p class="date">2h ago</p>
+										<p class="date">{{myKindlly.dateAdded}}</p>
 									</div>
 								</div>
 								<p class="points">
@@ -107,7 +107,7 @@
 							</div>
 							<section class="buttons">
 								<a @click.prevent="myKindlly.isCompleted = true" class="complete-button button"> ◯ Complete</a>
-								<a href="" class="button delete-button">
+								<a @click.prevent="removeKindlly(myKindlly)" class="button delete-button">
 									<i class="el el-trash"></i>
 								</a>
 							</section>
@@ -124,7 +124,7 @@
 										<p class="cost" v-if="myKindlly.cost == 1"><span>$</span><span class="faded">$$</span></p>
 										<p class="cost" v-if="myKindlly.cost == 2"><span>$$</span><span class="faded">$</span></p>
 										<p class="cost" v-if="myKindlly.cost == 3"><span>$$$</span></p>
-										<p class="date">2h ago</p>
+										<p class="date">{{myKindlly.dateAdded}}</p>
 									</div>
 								</div>
 								<p class="points">

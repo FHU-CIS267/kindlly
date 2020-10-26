@@ -1,9 +1,9 @@
 var app = new Vue({
     el: '#app',
     data: {
-        discoverKindllys: {},
-        myKindllys: {},
-        user: {}
+        discoverKindllys: [],
+        myKindllys: [],
+        user: []
     },
     methods: {
         loadData: async function () {
@@ -15,9 +15,13 @@ var app = new Vue({
         },
         addKindlly: function (kindlly, kindllys) {
             kindllys.splice(kindllys.indexOf(kindlly), 1);
-
-            this.myKindllys.splice(this.myKindllys.length, 0, kindlly);
-            console.log(this.myKindllys);
+            let selectedKindlly = kindlly;
+            selectedKindlly.isCompleted = false;
+            selectedKindlly.dateAdded = new Date();
+            this.myKindllys.push(selectedKindlly);
+        },
+        removeKindlly: function (myKindlly) {
+            this.myKindllys.splice(this.myKindllys.indexOf(myKindlly), 1);
         }
     },
     created: function() { 
