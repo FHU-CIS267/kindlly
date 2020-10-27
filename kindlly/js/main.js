@@ -1,15 +1,40 @@
 var app = new Vue({
     el: '#app',
     data: {
-        user: {
-            username: "kenancasey",
-            avatar: "img/avatars/male-square.png"
+        discoverKindllys: [],
+        myKindllys: [],
+        user: []
+    },
+
+    methods: {
+
+
+        loadData: async function () {
+            let response = await fetch("kindllys.json");
+            let json = await response.json();
+            this.discoverKindllys = json.discoverKindllys;
+            this.myKindllys = json.myKindllys;
+            this.user = json.currentUser;
+        },
+
+
+        addNewKindlly: function (kindlly, kindllys) {
+            kindllys.splice(kindllys.indexOf(kindlly), 1);
+            let selectedKindlly = kindlly;
+            selectedKindlly.isCompleted = false;
+            selectedKindlly.dateAdded = new Date();
+            this.myKindllys.push(selectedKindlly);
+        },
+
+
+
+        deleteKindlly: function (myKindlly) {
+            this.myKindllys.splice(this.myKindllys.indexOf(myKindlly), 1);
         }
     },
-    computed:
-    {
-        message: function(){
-            return `Hello, ${this.user.username}`;
-        }
+
+    
+    created: function() { 
+        this.loadData();
     }
 });
