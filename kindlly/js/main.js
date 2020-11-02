@@ -29,15 +29,12 @@ var app = new Vue({
             while (index1 + index2 != this.myKindllys.length) {
                 if (this.myKindllys[index1+index2].isCompleted == false) {
                     this.myInCompleteKindllys[index1] = this.myKindllys[index1+index2];
-                    //alert(this.myKindllys[index1+index2].description);
-                    //alert(this.myInCompleteKindllys[index1])
                     index1++;
                 } else {
                     this.myCompleteKindllys[index2] = this.myKindllys[index1+index2];
                     index2++;
                 }
             }
-            alert(this.myCompleteKindllys[0].description)
         },
         CheckForCost: function (cost) {
             let costring = "";
@@ -74,31 +71,7 @@ var app = new Vue({
             }
         },
         addToMyKindllys: function (kindlly) {
-            let newMyKindlly = `
-                <div class="kindlly">
-                    <div class="header">
-                        <div class="info">
-                            <h4>${kindlly.description}</h4>
-                            <div class="">
-                                <p class="cost">
-                                    <span>${this.CheckForCost(kindlly.cost)}</span><span class="faded">${this.CheckForEmptyCost(kindlly.cost)}</span>
-                                </p>
-                                <p class="date">Today</p>
-                            </div>
-                        </div>
-                        <p class="points">
-                            <span class="value">+${kindlly.points}</span><br />
-                            <span class="label">KP</span>
-                        </p>
-                    </div>
-                    <section class="buttons">
-                        <a href="" class="complete-button button"> ◯ Complete</a>
-                        <a href="" class="button delete-button">
-                            <i class="el el-trash"></i>
-                        </a>
-                    </section>
-                </div>`;
-            $("#my-completed-kindllys").append(newMyKindlly);
+            this.myInCompleteKindllys.push(kindlly);
         },
         SetToRemove: function () {
             $(".Remove-Button").on("click", function(){
